@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "./node_modules/.bin/_mocha",
-    "coverage": "nyc ./node_modules/mocha/bin/_mocha",
+    "test:no-coverage": "./node_modules/.bin/_mocha",
+    "test": "nyc ./node_modules/mocha/bin/_mocha",
     "eslint": "eslint ./lib --fix"
   },
   "keywords": [],

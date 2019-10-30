@@ -7,7 +7,7 @@ cache:
   directory:
     - node_modules
 
-node_js: lts
+node_js: lts/*
 
 install:
   - npm install -D

@@ -6,12 +6,16 @@ describe('webpack.base.js test case', () => {
 
   it('entry', () => {
     assert.equal(
-      baseConfig.entry.index,
-      'C:/Users/Sijia/Desktop/code/github.com/geekbang-webpack-lesson/code/chapter04/builder-webpack/test/smoke/template/src/index/index.js'
+      baseConfig.entry.index.indexOf(
+        'builder-webpack/test/smoke/template/src/index/index.js'
+      ) > -1,
+      true
     );
     assert.equal(
-      baseConfig.entry.search,
-      'C:/Users/Sijia/Desktop/code/github.com/geekbang-webpack-lesson/code/chapter04/builder-webpack/test/smoke/template/src/search/index.js'
+      baseConfig.entry.search.indexOf(
+        'builder-webpack/test/smoke/template/src/search/index.js'
+      ) > -1,
+      true
     );
   });
 });

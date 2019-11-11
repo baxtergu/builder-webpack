@@ -7,7 +7,7 @@
     "test:no-coverage": "./node_modules/.bin/_mocha",
     "test": "nyc ./node_modules/mocha/bin/_mocha",
     "eslint": "eslint ./lib --fix",
-    "pre-commit": "validate-commit-msg",
+    "commit-msg": "validate-commit-msg",
     "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0"
   },
   "keywords": [],

@@ -6,7 +6,9 @@
   "scripts": {
     "test:no-coverage": "./node_modules/.bin/_mocha",
     "test": "nyc ./node_modules/mocha/bin/_mocha",
-    "eslint": "eslint ./lib --fix"
+    "eslint": "eslint ./lib --fix",
+    "pre-commit": "validate-commit-msg",
+    "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0"
   },
   "keywords": [],
   "author": "",
@@ -15,13 +17,16 @@
     "assert": "^2.0.0",
     "babel-eslint": "^10.0.3",
     "chai": "^4.2.0",
+    "conventional-changelog-cli": "^2.0.27",
     "eslint": "^5.16.0",
     "eslint-config-airbnb-base": "14.0.0",
     "eslint-plugin-import": "^2.18.2",
     "glob-all": "^3.1.0",
+    "husky": "^3.0.9",
     "mocha": "^6.1.4",
     "nyc": "^14.1.1",
-    "prettier": "1.18.2"
+    "prettier": "1.18.2",
+    "validate-commit-msg": "^2.14.0"
   },
   "dependencies": {
     "autoprefixer": "^9.5.1",
